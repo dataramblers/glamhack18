@@ -21,76 +21,76 @@ export interface EmojiItem {
 }
 
 export const EMOJIS_LVL_1: Array<EmojiItem> = [
-  {
-    'name': 'technologieundbrauchtum\n',
-    'emoji': '✋',
-    'path': '/img/emojis/game/hand.svg'
-  },
-  {
-    'name': 'gemalde',
-    'emoji': '🖱',
-    'path': '/img/emojis/game/mouse.svg'
-  },
-  {
-    'name': 'militariawaffen',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'glas',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'uhren',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'histfotografie',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'archaologie',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'keramik',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'graphik',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'skulpturen',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'textilienkostume',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'schmuck',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'edelmetall',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
-  {
-    'name': 'numismatik',
-    'emoji': '🔌',
-    'path': '/img/emojis/game/plug.svg'
-  },
+    {
+        'name': 'technologieundbrauchtum',
+        'emoji': '✋',
+        'path': '/img/thumbnails/small/technologie.jpg'
+    },
+    {
+        'name': 'gemalde',
+        'emoji': '🖱',
+        'path': '/img/thumbnails/small/gemaelde.jpg'
+    },
+    {
+        'name': 'militariawaffen',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/militaria.jpg'
+    },
+    {
+        'name': 'glas',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/glas.jpg'
+    },
+    {
+        'name': 'uhren',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/uhren.jpg'
+    },
+    {
+        'name': 'histfotografie',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/histfoto.jpg'
+    },
+    {
+        'name': 'archaologie',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/archaeologie.jpg'
+    },
+    {
+        'name': 'keramik',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/keramik.jpg'
+    },
+    {
+        'name': 'graphik',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/graphik.jpg'
+    },
+    {
+        'name': 'skulpturen',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/skulpturen.jpg'
+    },
+    {
+        'name': 'textilienkostume',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/textilien.jpg'
+    },
+    {
+        'name': 'schmuck',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/schmuck.jpg'
+    },
+    {
+        'name': 'edelmetall',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/edelmetall.jpg'
+    },
+    {
+        'name': 'numismatik',
+        'emoji': '🔌',
+        'path': '/img/thumbnails/small/numismatik.jpg'
+    },
 ];
 
 export const EMOJIS_LVL_2: Array<EmojiItem> = [
@@ -109,73 +109,73 @@ export const EMOJIS_LVL_5: Array<EmojiItem> = [
 // here.
 export const EMOJIS_LVL_DEMO: Array<EmojiItem> = [
     {
-        'name': 'technologieundbrauchtum\n',
+        'name': 'technologieundbrauchtum',
         'emoji': '✋',
-        'path': '/img/emojis/game/hand.svg'
+        'path': '/img/thumbnails/small/technologie.jpg'
     },
     {
         'name': 'gemalde',
         'emoji': '🖱',
-        'path': '/img/emojis/game/mouse.svg'
+        'path': '/img/thumbnails/small/gemaelde.jpg'
     },
     {
         'name': 'militariawaffen',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/militaria.jpg'
     },
     {
         'name': 'glas',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/glas.jpg'
     },
     {
         'name': 'uhren',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/uhren.jpg'
     },
     {
         'name': 'histfotografie',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/histfoto.jpg'
     },
     {
         'name': 'archaologie',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/archaeologie.jpg'
     },
     {
         'name': 'keramik',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/keramik.jpg'
     },
     {
         'name': 'graphik',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/graphik.jpg'
     },
     {
         'name': 'skulpturen',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/skulpturen.jpg'
     },
     {
         'name': 'textilienkostume',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/textilien.jpg'
     },
     {
         'name': 'schmuck',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/schmuck.jpg'
     },
     {
         'name': 'edelmetall',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/edelmetall.jpg'
     },
     {
         'name': 'numismatik',
         'emoji': '🔌',
-        'path': '/img/emojis/game/plug.svg'
+        'path': '/img/thumbnails/small/numismatik.jpg'
     },
 ];

@@ -29,7 +29,7 @@ import {SPEECH_SPRITE_TIMESTAMPS} from './speech_sprite_timestamps';
 import {EmojiItem, EMOJIS_LVL_1, EMOJIS_LVL_2, EMOJIS_LVL_3, EMOJIS_LVL_4,
      EMOJIS_LVL_5, EMOJIS_LVL_DEMO} from './game_levels';
 
-export const GAME_START_TIME = 20;
+export const GAME_START_TIME = 120;
 export const GAME_EXTEND_TIME = 10;
 export const GAME_MAX_ITEMS = 10;
 const SPEAKING_DELAY = 2500; // 2.5 seconds
@@ -412,7 +412,7 @@ export class Game {
    * Initializes the game and sets up camera and MobileNet access. Once ready
    * shows the countdown to start the game.
    */
-  initGame() {
+  initGame(category: string) {
     if (this.firstRun) {
 
       if(this.debugMode) {
@@ -435,7 +435,7 @@ export class Game {
         // NOTE the predict engine will only do calculations if game.isRunning
         // is set to true. We trigger that inside our countdown Promise.
         this.firstRun = false;
-        this.nextEmoji();
+        this.nextEmoji(category);
         this.predict();
         ui.showCountdown();
       }).catch(error => {
@@ -496,14 +496,14 @@ export class Game {
       ui.resetCameraAfterFlash();
     }
 
-    this.resetGame();
+    this.resetGame(configure);
     ui.showCountdown();
   }
 
   /**
    * Resets all game variables and UI so we can start a new game instance.
    */
-  resetGame() {
+  resetGame(category: string) {
 
     ui.resetScrollPositions();
 
@@ -513,7 +513,7 @@ export class Game {
     if (this.demoMode) {
       this.reShuffleLevelEmojis('#');
     }
-    this.nextEmoji();
+    this.nextEmoji(category);
 
     this.score = 0;
     this.timer = GAME_START_TIME;
@@ -639,29 +639,10 @@ export class Game {
    * gameDifficulty levels to request a level based on how far the user has
    * progressed in the game.
    */
-  nextEmoji() {
-
-    if (this.currentLvlIndex === this.gameDifficulty.length) {
-      this.currentLvlIndex = 0;
-    }
-
-    let curLvl = this.gameDifficulty[this.currentLvlIndex];
-    let lvlArray = this.emojiLvlLookup[curLvl];
-    let nextEmoji = lvlArray.shift();
-
-    // If we have selected all possible emojis from a particular level,
-    // reshuffle the list of possible emoji for that level and request a new
-    // next emoji.
-    if (nextEmoji === undefined) {
-      this.reShuffleLevelEmojis(curLvl);
-      lvlArray = this.emojiLvlLookup[curLvl];
-      nextEmoji = lvlArray.shift();
-    }
-
-    this.currentLvlIndex++;
-    this.currentEmoji = nextEmoji;
-
+  nextEmoji(category: string) {
+    this.currentEmoji = this.emojiLvlLookup[0].find(x => x.name === category);
     ui.setActiveEmoji(this.currentEmoji.path);
+    ui.setActiveEmojiName(this.currentEmoji.name);
     }
 
   /**
