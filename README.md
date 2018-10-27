@@ -1,6 +1,12 @@
-# GLAM Hack '18
+# Find Me an Exhibit
 
-Our goal is
+Are you ready to take up the challenge? Film categories of objects in the exhibition "History of Switzerland" running against the clock.
+
+The app displays one of several categories of exhibits that can be found in the exhibition (like "cloths", "paintings" or "clocks"). Your job is to find a matching exhibit as quick as possible. You don't have much time, so hurry up!
+
+Best played on portable devices. ;-)
+
+The frontend of the app is based on the game "[Emoji Scavenger Hunt](https://github.com/google/emoji-scavenger-hunt)", the model is built with [TensorFlow.js](https://js.tensorflow.org/) fed with a [lot of images](https://opendata.swiss/en/dataset?q=&organization=schweizerisches-nationalmuseum-snm) kindly provided by the [National Museum Zurich](https://www.nationalmuseum.ch/e/). The app is in pre-alpha stage.
 
 ## Demo
 
